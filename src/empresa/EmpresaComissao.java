@@ -23,7 +23,7 @@ public class EmpresaComissao {
 
 		leitor.close();
 
-		if (valorVenda > 10000 && valorVenda < 20000 && tempoDeTrabalho > 1) {
+		if (valorVenda > 10000 && valorVenda <= 20000 && tempoDeTrabalho > 1) {
 			valorComissao = valorVenda * 0.05;
 			System.out.println("O vendedor " + nome + " receberá de comissão: " + "R$" + valorComissao);
 		} else if (valorVenda > 20000 && tempoDeTrabalho > 1) {
